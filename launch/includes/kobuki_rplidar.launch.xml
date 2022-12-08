@@ -1,6 +1,6 @@
 <launch>
 
-  <arg name="urdf_file" default="$(find xacro)/xacro.py '$(find turtlebot_rplidar)/urdf/kobuki_rplidar_hexagons_asus_xtion_pro.urdf.xacro'" />
+  <arg name="urdf_file" default="$(find xacro)/xacro '$(find turtlebot_rplidar)/urdf/kobuki_rplidar_hexagons_asus_xtion_pro.urdf.xacro'" />
   <param name="robot_description" command="$(arg urdf_file)" />
   
   <!-- Gazebo model spawner -->
